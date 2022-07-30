@@ -96,7 +96,7 @@ import {HomePage} from './home';
 import {PostListPage} from './post-list';
 import {PostViewPage} from './post-view';
 
-export const routes = [
+export const ROUTES = [
   {path: '/', route: routes.home},
   {path: '/posts', route: routes.postsList},
   // be sure your postId parameter matches generic parameter in `createRoute`
@@ -120,12 +120,12 @@ import {createBrowserHistory} from 'history';
 import {createHistoryRouter} from 'atomic-router';
 import {linkRouter, onAppMount} from 'atomic-router-forest';
 
-import {routes, Pages} from '~/pages';
+import {ROUTES, Pages} from '~/pages';
 import {Link} from '~/shared/lib/router';
 
 // Create history instance and router instance to control routing in the app
 const history = createBrowserHistory();
-const router = createHistoryRouter({routes});
+const router = createHistoryRouter({routes: ROUTES});
 
 // This event need to setup initial configuration. You can move it into src/shared
 const appMounted = createEvent();
