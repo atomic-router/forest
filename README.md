@@ -1,6 +1,6 @@
 # Atomic-router-forest
 
-Forest bindings for [atomic-router](https://github.com/kelin2025/atomic-router)
+Forest bindings for [atomic-router](https://github.com/atomic-router/atomic-router)
 
 [//]: # '[Example on StackBlitz](https://stackblitz.com/edit/react-fglswy)'
 
