@@ -1,6 +1,10 @@
 # Atomic-router-forest
 
-Forest bindings for [atomic-router](https://github.com/atomic-router/atomic-router)
+[Forest](https://github.com/effector/effector/tree/master/packages/forest) bindings for [atomic-router](https://github.com/atomic-router/atomic-router)
+
+> **Note**: [forest](https://github.com/effector/effector/tree/master/packages/forest) still in active development phase. This bindings will be in v0.x too.
+
+> ❗️ **Attention**: At the moment atomic-router team collecting issues and feature requests to redesign and release update. Use current version of atomic-router on your own risk. We are going to write migration guide when/if the release will contain breaking changes. Thank you for reporting issues 🧡
 
 [//]: # '[Example on StackBlitz](https://stackblitz.com/edit/react-fglswy)'
 
