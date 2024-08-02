@@ -1,10 +1,10 @@
 {
   "name": "atomic-router-forest",
   "version": "0.2.0",
-  "author": "Sergey Sova <mail@sergeysova.com> (https://sova.dev)",
+  "author": "Sergey Sova <mail@sergeysova.com> (https://sova.sh)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sergeysova/atomic-router-forest"
+    "url": "https://github.com/atomic-router/forest"
   },
   "license": "MIT",
   "main": "dist/index.js",

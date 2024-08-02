@@ -1,4 +1,4 @@
-# Atomic-router-forest
+# atomic-router-forest
 
 [Forest](https://github.com/effector/effector/tree/master/packages/forest) bindings for [atomic-router](https://github.com/atomic-router/atomic-router)
 
