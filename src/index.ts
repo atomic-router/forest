@@ -20,7 +20,7 @@ export function onAppMount(clock: Event<void>) {
   h('div', () => node(() => clock()));
 }
 
-export function withRoute<T>(route: RouteInstance<T>) {
+export function withRoute<T extends RouteParams>(route: RouteInstance<T>) {
   spec({visible: route.$isOpened});
 }
 
@@ -57,8 +57,8 @@ type LinkSpec<Path extends RouteParams, Query extends QueryParams> = {
   query?: LinkParams<Query>;
 };
 
-export interface RouteObject<T = unknown> {
-  route: RouteInstance<T>;
+export interface RouteObject {
+  route: RouteInstance<RouteParams>;
   path: string;
 }
 
