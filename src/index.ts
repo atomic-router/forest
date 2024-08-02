@@ -10,13 +10,14 @@ import {
   createEvent,
   createStore,
   Event,
+  EventCallable,
   is,
   sample,
   Store,
 } from 'effector';
 import {DOMTag, h, handler, node, spec} from 'forest';
 
-export function onAppMount(clock: Event<void>) {
+export function onAppMount(clock: EventCallable<void>) {
   h('div', () => node(() => clock()));
 }
 
@@ -124,13 +125,7 @@ export function createLink() {
   return Link;
 }
 
-function toStore<T extends Record<string, any>>(
-  value:
-    | Store<T>
-    | {
-        [Key in keyof T]: Store<T[Key]> | T[Key];
-      },
-): Store<T> {
+function toStore<T extends Record<string, any>>(value: Store<T> | T): Store<T> {
   if (is.store(value)) {
     return value;
   }
